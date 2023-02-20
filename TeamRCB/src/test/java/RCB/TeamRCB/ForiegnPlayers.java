@@ -11,6 +11,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ForiegnPlayers {
@@ -72,12 +73,14 @@ public class ForiegnPlayers {
 				//System.out.println(countryname);
 				if(role.equals("Wicket-keeper"))
 				{
+					
 					wicketKeeper.put(role,jsonobject.get("name").toString());
 				}
 				
 			}
 
 			System.out.println("List of WicketKeepers : "+wicketKeeper);
+			
 
 
 
